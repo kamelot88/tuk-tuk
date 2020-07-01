@@ -1,0 +1,325 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px),
+  @media only screen and (max-width: 320px),
+  @media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
+  /* Стили для Header
+*/
+  #header {
+    height: 86vh;
+  }
+  #menu {
+    position: absolute;
+    top: 75vh;
+    width: 100%;
+    font-size: 2.5vw;
+  }
+  .first_button {
+    font-size: 2.5vw;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo h1 {
+    font-size: 10vw !important;
+  }
+  .logo p {
+    font-size: 5vw !important;
+  }
+  #phone_header {
+    font-size: 6.5vw;
+    color: #fff;
+    top: 10vh;
+    width: 70%;
+  }
+  .carusel_phone {
+    display: none;
+  }
+  #header img {
+    margin: auto;
+    width: 75vw;
+  }
+  .block_responsiv {
+    display: block;
+  }
+  .button_about {
+    margin: 0 auto;
+  }
+  .column_form input {
+    height: 2vh;
+    font-size: 0.7vw;
+    margin-top: 2.5vh;
+    font-size: 1.1vw;
+  }
+  .logo_tuk-tuk {
+    display: block;
+  } /* Стили для прилипающего
+меню */
+  .FixedNav .logo h1,
+  .FixedNav .logo p {
+    display: none;
+  }
+  .FixedNav #menu {
+    top: 0;
+    width: 100%;
+    font-size: 2.5vw;
+    width: 100%;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:  center;
+    margin-right: -12vw;
+  }
+  .FixedNav {
+    height: 8vh;
+    background-color: rgb(184, 184, 184);
+    padding: 0 0 0 0;
+  }
+  .Fixedheader {
+    height: 60vh;
+  } /* Стили для диалогового окна коментарриев */
+  #content_modal {
+    font-size: 2.5vw;
+  }
+  #content_modal form input {
+    font-size: 2.5vw;
+  }
+  textarea {
+    margin-bottom: 2vh;
+  }
+  .avatar {
+    padding-top: 2vh;
+  }
+  #content_modal button {
+    font-size: 2.5vw;
+  }
+  #modal_box {
+    width: 50%;
+    left: calc(50% - 30vw);
+    z-index: 51;
+  } /* Стили для Abaut */
+  #About {
+    padding-top: 4vh;
+  }
+  #About h2 {
+    font-size: 5.5vw;
+  }
+  #About .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content .left,
+  .content .right {
+    width: 100%;
+  }
+  .text_container h3 {
+    font-size: 3vw;
+  }
+  .i01,
+  .i02,
+  .i03,
+  .i04 {
+    width: 8vw;
+    height: 8vw;
+    align-self: flex-start;
+    margin-top: 1.8vh;
+  }
+  .text_container p {
+    font-size: 3vw;
+  }
+  .i01 img,
+  .i02 img,
+  .i03 img,
+  .i04 img {
+    height: 3.8vw;
+    width: auto;
+  }
+  .button_about {
+    margin-top: 2vh;
+  }
+  .text_now {
+    font-size: 4vw;
+    margin: 4vh 0 4vh 0;
+    font-weight: 700;
+    text-align: center;
+  }
+  .btn {
+    font-size: 3.5vw;
+  } /* Стили для Function */
+  #function {
+    padding-top: 5vh;
+  }
+  .function_title {
+    margin-bottom: 5vh;
+  }
+  .function_title h2 {
+    font-size: 4.2vw;
+  }
+  .text_function h3 {
+    margin-bottom: 4vh;
+    font-size: 2vw;
+  }
+  .text_function p {
+    margin-bottom: 3vh;
+    font-size: 2.1vw;
+  }
+  .text_function {
+    width: 60%;
+  }
+  .app_url {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+  }
+  .app_url a img {
+    width: 100%;
+    margin-bottom: 2vh;
+  } 
+  .app_url a:nth-child(1) {
+    padding-right: 3vw;
+  }
+  /* Стили для Tesmodial */
+  #testimonials {
+    padding: 5vh 0 2vh 0;
+  }
+  #testimonials .testimonials_title {
+    padding-bottom: 5vh;
+    text-transform: uppercase;
+  }
+  .testimonials_title h2 {
+    font-size: 4.2vw;
+  }
+  #slide {
+    margin-bottom: 4vh;
+  }
+  .photo_id {
+    border-radius: 8vw;
+  }
+  .photo_id img {
+    height: 15vw;
+  }
+.koment {
+  border-radius: 10vw;
+  font-size: 3vw;
+}
+   #yellow_phone {
+    padding: 3vh 0 3vh 0;
+  }
+  #yellow_phone h4 {
+    font-size: 4vw;
+    margin-bottom: 2vh;
+  }
+  footer {
+    padding-top: 4vh;
+  }
+  footer p {
+    font-size: 1.9vw;
+  }
+  #Contact .icons_cont span {
+    margin-bottom: 1.5vh;
+  }
+  .icons_inf img,
+  .icons_cont img,
+  .app img {
+    height: 2vh;
+  }
+  .copirait p {
+    font-size: 2.3vw;
+  }
+  .copirait a {
+    font-size: 2.5vw;
+  }
+  .copirait p {
+    font-size: 2.2vw;
+  }
+  .app p {
+    font-size: 1.8vw;
+  }
+  #Contact .icons_cont span {
+    font-size: 2vw;
+  }
+.prof_panel {
+  justify-content: space-around;
+  font-size: 2.8vw;
+  margin-bottom: 4vh;
+}
+#main {
+  display: block;
+}
+#webpage{
+	margin:-3vh 0 0 -5vh;
+}
+#webpage img {
+  width: 30vw;
+}
+#modal_box {
+  width: 80%;
+  left: calc(80% - 70vw);
+}
+.login_box {
+  height: 50vh;
+}
+.login_box form .input textarea {
+  width: 90%;
+  height: 20vh;
+}
+.login_box form .input button {
+  width: auto;
+  height: 7vh;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 3.5vw;
+  line-height: 190%;
+}
+.form a {
+  margin: 0 1vw 0 1vw;
+}
+.description,
+.icons_phon {
+  font-size: 1.9vw;
+}
+.mobo-vodafone-24, .mobo-kyivstar-24, .mobo-lifecell-24 {
+    
+    background-repeat: no-repeat;
+    line-height: 1.9vh;
+    padding-left: 1vw;
+    margin-bottom: 1vh;
+}
+#contackt_foot .wrap {
+  width: 80%;
+}
+#information,
+#download,
+#Contact {
+  width: 23.5vw;
+}
+.i01,
+.i02,
+.i03,
+.i04,
+.i05,
+.i06,
+.i07,
+.i08 {
+  width: 8vw;
+  height: 8vw;
+}  
+.i03 img, .i06 img {
+  width: 5vw;
+}
+.i05 img {
+  width: 6vw;
+}
+.i07 img {
+  width: 3.5vw;
+}
+}

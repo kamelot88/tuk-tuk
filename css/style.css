@@ -1,0 +1,939 @@
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Bold.eot");
+  src: url("../fonts/Lato-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.woff") format("woff"),
+    url("../fonts/Lato-Bold.ttf") format("truetype"),
+    url("../fonts/Lato-Bold.svg#Lato-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+*/ a,
+a:hover,
+button,
+button:hover,
+.anime {
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+/*Flex Framework*/
+.main_flex {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.main_flex__nowrap {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+}
+
+.main_flex_column {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+.main_flex_column_nw {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+.flex__auto {
+  flex: auto;
+  -webkit-flex: auto;
+  -ms-flex: auto;
+}
+
+.flex__jcontent_between {
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.flex__jcontent_start {
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.flex__jcontent_end {
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+
+.flex__jcontent_center {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.flex__jcontent_around {
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+.flex__align-items_start {
+  align-items: flex-start;
+  -webkit-align-items: flex-start;
+}
+
+.flex__align-items_end {
+  align-items: flex-end;
+  -webkit-align-items: flex-end;
+}
+
+.flex__align-items_baseline {
+  align-items: baseline;
+  -webkit-align-items: baseline;
+}
+
+.flex__align-items_stretch {
+  align-items: stretch;
+  -webkit-align-items: stretch;
+}
+
+.flex__align-items_center {
+  align-items: center;
+  -webkit-align-items: center;
+}
+
+.flex__align-content_flex-start {
+  align-content: flex-start;
+  -webkit-align-content: flex-start;
+}
+
+.flex__align-content_flex-end {
+  align-content: flex-end;
+  -webkit-align-content: flex-end;
+}
+
+.flex__align-content_space-between {
+  align-content: space-between;
+  -webkit-align-content: space-between;
+}
+
+.flex__align-content_center {
+  align-content: center;
+  -webkit-align-content: center;
+}
+
+.flex__align-content_space-around {
+  align-content: space-around;
+  -webkit-align-content: space-around;
+}
+
+.flex__align-content_stretch {
+  align-content: stretch;
+  -webkit-align-content: stretch;
+}
+
+.flex__flex-grow_01 {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+
+.flex__flex-grow_02 {
+  flex-grow: 2;
+  -webkit-flex-grow: 2;
+}
+
+.flex__flex-grow_03 {
+  flex-grow: 3;
+  -webkit-flex-grow: 3;
+}
+
+.flex__flex-grow_04 {
+  flex-grow: 4;
+  -webkit-flex-grow: 4;
+}
+
+/* Начало общих стилей */
+body {
+  /* font-family: lato, sans-serif; */
+  font-family: "Lato - Bold", sans-serif;
+  /* font-style: normal; */
+  font-weight: 900;
+}
+.wrap_header {
+  width: 88.6vw;
+  margin: 0 auto;
+  position: relative;
+}
+.wrap {
+  width: 75vw;
+  margin: 0 auto;
+  position: relative;
+}
+.yellow {
+  color: #ffc61a;
+}
+.white {
+  color: white;
+}
+.btn {
+  text-transform: uppercase;
+  border-radius: 0.7vw;
+  border: none;
+  font-family: "Bebas Neue Bold";
+  margin: auto;
+  margin-bottom: 5vh;
+  background-color: black;
+  font-size: 1.5vw;
+  padding: 1vw 2vw 1vw 2vw;
+  color: #ffffff;
+  font-weight: 700;
+}
+.btn:hover {
+  background: rgba(74, 74, 74, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(74, 74, 74, 1) 0%,
+    rgba(87, 87, 87, 1) 12%,
+    rgba(97, 97, 97, 1) 17%,
+    rgba(41, 41, 41, 1) 30%,
+    rgba(69, 69, 69, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(18, 18, 18, 1) 75%,
+    rgba(41, 41, 41, 1) 76%,
+    rgba(28, 28, 28, 1) 81%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 1) 97%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(74, 74, 74, 1)),
+    color-stop(12%, rgba(87, 87, 87, 1)),
+    color-stop(17%, rgba(97, 97, 97, 1)),
+    color-stop(30%, rgba(41, 41, 41, 1)),
+    color-stop(39%, rgba(69, 69, 69, 1)),
+    color-stop(51%, rgba(0, 0, 0, 1)),
+    color-stop(75%, rgba(18, 18, 18, 1)),
+    color-stop(76%, rgba(41, 41, 41, 1)),
+    color-stop(81%, rgba(28, 28, 28, 1)),
+    color-stop(95%, rgba(0, 0, 0, 1)),
+    color-stop(97%, rgba(0, 0, 0, 1)),
+    color-stop(100%, rgba(0, 0, 0, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(74, 74, 74, 1) 0%,
+    rgba(87, 87, 87, 1) 12%,
+    rgba(97, 97, 97, 1) 17%,
+    rgba(41, 41, 41, 1) 30%,
+    rgba(69, 69, 69, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(18, 18, 18, 1) 75%,
+    rgba(41, 41, 41, 1) 76%,
+    rgba(28, 28, 28, 1) 81%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 1) 97%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(74, 74, 74, 1) 0%,
+    rgba(87, 87, 87, 1) 12%,
+    rgba(97, 97, 97, 1) 17%,
+    rgba(41, 41, 41, 1) 30%,
+    rgba(69, 69, 69, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(18, 18, 18, 1) 75%,
+    rgba(41, 41, 41, 1) 76%,
+    rgba(28, 28, 28, 1) 81%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 1) 97%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(74, 74, 74, 1) 0%,
+    rgba(87, 87, 87, 1) 12%,
+    rgba(97, 97, 97, 1) 17%,
+    rgba(41, 41, 41, 1) 30%,
+    rgba(69, 69, 69, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(18, 18, 18, 1) 75%,
+    rgba(41, 41, 41, 1) 76%,
+    rgba(28, 28, 28, 1) 81%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 1) 97%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(74, 74, 74, 1) 0%,
+    rgba(87, 87, 87, 1) 12%,
+    rgba(97, 97, 97, 1) 17%,
+    rgba(41, 41, 41, 1) 30%,
+    rgba(69, 69, 69, 1) 39%,
+    rgba(0, 0, 0, 1) 51%,
+    rgba(18, 18, 18, 1) 75%,
+    rgba(41, 41, 41, 1) 76%,
+    rgba(28, 28, 28, 1) 81%,
+    rgba(0, 0, 0, 1) 95%,
+    rgba(0, 0, 0, 1) 97%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#000000', GradientType=0 );
+}
+.logo_tuk-tuk {
+  display: none;
+}
+/* Конец общих стилей */
+
+/* Начало стилей для Header */
+#header {
+  width: 100%;
+  height: 82vh;
+  flex-direction: column;
+  background: url(../img/fon_header.png), url(../img/fon_header_black.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 7vh;
+}
+.prof_panel {
+  margin-top: -5vh;
+  color: #fff;
+}
+.prof_panel a, .panel {
+color: #fff;
+margin-right: 2vw;
+}
+.logo {
+  width: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logo h1 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  font-size: 4.5vw;
+}
+.logo p {
+  font-size: 1.5vw;
+}
+.logo span {
+  text-transform: uppercase;
+}
+
+#menu {
+  width: 50%;
+  font-size: 1.1vw;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+}
+
+.first_button {
+  color: rgb(0, 22, 0);
+  font-size: 1.1vw;
+  padding: 0.4vw;
+  text-shadow: 1px 0px 0px rgba(30, 30, 30, 0.8);
+  -webkit-border-radius: 2.5vw;
+  -moz-border-radius: 2.5vw;
+  border-radius: 2.5vw;
+  background: rgb(210, 72, 20);
+  background: -moz-linear-gradient(
+    90deg,
+    rgb(210, 72, 20) 0%,
+    rgb(255, 198, 26) 0%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(210, 72, 20) 0%,
+    rgb(255, 198, 26) 0%
+  );
+  background: -o-linear-gradient(
+    90deg,
+    rgb(210, 72, 20) 0%,
+    rgb(255, 198, 26) 0%
+  );
+  background: -ms-linear-gradient(
+    90deg,
+    rgb(210, 72, 20) 0%,
+    rgb(255, 198, 26) 0%
+  );
+  background: linear-gradient(0deg, rgb(210, 72, 20) 0%, rgb(255, 198, 26) 0%);
+  -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+#phone_header {
+  position: relative;
+  font-size: 4.5vw;
+  text-decoration: none;
+  cursor: pointer;
+}
+#phone_header a {
+  color: #fff;
+}
+#phone_header p {
+  margin: 1.56vh 0 1.5vh 0;
+}
+.block_responsiv {
+  display: none;
+}
+
+#header img {
+  width: 51.6vw;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: -12vh;
+}
+#header .block_main2 img {
+  height: 8vh;
+  width: auto;
+  margin: 0;
+  margin-right: 1.5vw;
+}
+/* Конец стилей для Header */
+
+/* Начало стилей прилипающего меню */
+.FixedNav {
+  position: fixed;
+  top: 0;
+  opacity: 0.7;
+  background-color: #fff;
+  left: 0;
+  color: rgb(0, 22, 0);
+  width: 100%;
+  height: 5vh;
+  z-index: 10;
+  transition: 0.25s ease-in-out;
+  padding: 1vw 6vw 0 6vw;
+}
+
+.FixedNav .logo {
+  width: 50%;
+  color: rgb(0, 22, 0);
+  margin-bottom: 1vw;
+}
+
+.FixedNav .logo h1 {
+  font-size: 2.5vw;
+}
+
+.FixedNav .logo p {
+  display: none;
+}
+
+.FixedNav:hover {
+  opacity: 1;
+}
+
+.FixedNav a {
+  color: #030303 !important;
+}
+
+.FixedNav nav {
+  height: inherit;
+  position: relative;
+  right: 13vw;
+}
+/* Конец стилей прилипающего меню */
+/* Начало стилей About */
+#About {
+  background-color: #f0c33d;
+  padding-top: 16vh;
+}
+.About_wrap {
+  width: 90%;
+}
+#About h2 {
+  margin: auto;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  color: rgb(20, 20, 20);
+  margin-bottom: 5vh;
+  font-weight: 900;
+}
+.main {
+  font-size: 3.1vw;
+  margin-bottom: 5vw;
+  color: #fcf7f7;
+}
+.small {
+  font-size: 2.2vw;
+}
+.text_container h3 {
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.text_container p {
+  font-size: 1.8vw;
+}
+.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8 {
+  width: 50%;
+}
+
+.first img,
+.second img,
+.third img,
+.fourth img {
+  width: 2.5vw;
+  margin: auto;
+}
+.i01,
+.i02,
+.i03,
+.i04,
+.i05,
+.i06,
+.i07,
+.i08 {
+  width: 5vw;
+  height: 5vw;
+  background-color: rgb(20, 20, 20);
+  border-radius: 100%;
+  display: flex;
+  margin-right: 3vw;
+  flex-shrink: 0;
+  margin-top: 5vh;
+}
+.i03 img, .i06 img {
+  width: 3vw;
+}
+.i05 img {
+  width: 4vw;
+}
+.content {
+  margin-bottom: 3vw;
+}
+.text_now {
+  font-size: 4vw;
+  margin: 0 auto;
+  margin-top: 8vh;
+  font-weight: 700;
+}
+/* Конец стилей About */
+
+/* Начало стилей Function */
+#function {
+  background: url(../img/PLace_BG_image.svg), url(../img/fon_header_black.svg);
+  background-size: cover;
+  padding-top: 14vh;
+}
+.function_title h2 {
+  color: white;
+  font-size: 3.1vw;
+  text-transform: uppercase;
+  margin: 0 auto 0 auto;
+}
+.function_title .title_yellow {
+  color: #f0c33d;
+  font-size: 2.9vw;
+  /* margin-top: 0; */
+}
+.function_title h2:nth-child(3) {
+  font-size: 3vw;
+  text-transform: unset;
+}
+.function_title {
+  margin-bottom: 10vh;
+}
+.button_block .btn {
+  text-align: center;
+}
+.text_function p {
+  margin-bottom: 10vh;
+  color: white;
+  font-size: 1.1vw;
+}
+
+.text_function h3 {
+  margin-bottom: 4vh;
+  color: white;
+  text-transform: uppercase;
+  line-height: 170%;
+  font-size: 1.6vw;
+}
+.text_function,
+.imag_function {
+  width: 50%;
+  padding-bottom: 4vh;
+}
+.app_url {
+  width: 100%;
+}
+
+.imag_url img {
+  border-radius: 3vw;
+  width: 13vw;
+}
+.imag_function {
+  display: none;
+}
+
+/* Начало стилей для ЛУПЫ */
+#iphone{
+	/* The iphone frame div */
+	width: 100%;
+  height: auto;
+	position:relative;
+}
+
+#webpage{
+	/* Contains the webpage screenshot */
+  width: 20vw;
+  height:auto;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-12vh 0 0 -5vh;
+}
+#webpage img {
+  width: 20vw;
+  height: auto;
+}
+#retina{
+	/* The Retina effect */
+	background:url('../img/Place_App_Screen_here.png') no-repeat center center;
+	border:2px solid white;
+
+	/* Positioned absolutely, so we can move it around */
+	position:absolute;
+	height:150px;
+	width:150px;
+
+	/* Hidden by default */
+	display:none;
+
+	/* A blank cursor, notice the default fallback */
+	cursor:url('../img/blank.cur'),default;
+	
+	/* CSS3 Box Shadow */
+	-moz-box-shadow:0 0 5px #777, 0 0 10px #aaa inset;
+	-webkit-box-shadow:0 0 5px #777;
+	box-shadow:0 0 5px #777, 0 0 10px #aaa inset;
+	
+	/* CSS3 rounded corners */
+	-moz-border-radius:5.6vw;
+	-webkit-border-radius:5.6vw;
+	border-radius:5.6vw;
+}
+
+#retina.chrome{
+	/* A special chrome version of the cursor */
+	cursor:url('../img/blank_google_chrome.cur'),default;
+}
+
+#main{
+	/* The main div */
+	margin:2.5vh auto;
+	position:relative;
+  width:20vw;
+  height: auto;
+}
+/* Конец стилей для ЛУПЫ */
+/* Конец стилей Function */
+
+/* Начало стилей Yellow_phone */
+#yellow_phone {
+  background-color: #ffc61a;
+  padding: 5vh 0 5vh 0;
+}
+
+#yellow_phone h4 {
+  font-size: 3vw;
+  text-align: center;
+  margin: 0;
+}
+
+#yellow_phone p {
+  font-size: 5vw;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+}
+.more_phone {
+  font-size: 5vw;
+  margin-top: 1.5vh;
+}
+.more_phone a {
+  color: black;
+  margin-bottom: 1.2vh;
+}
+.more_phone a:nth-child(3) {
+  margin-bottom: 0;
+}
+/* Конец стилей Yellow_phone */
+
+/* Начало стилей testimonials */
+#testimonials {
+  background: url(../img/Layer_3_copy.svg), url(../img/fon_header_black.svg);
+  /* background-size: cover; */
+  padding: 7vh 0 0vh 0;
+}
+#testimonials .testimonials_title {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 10vh;
+}
+.testimonials_title h2 {
+  margin: 0;
+  font-size: 3.1vw;
+}
+#slide {
+  margin-bottom: 10vh;
+}
+.koment {
+  width: 27vw;
+  background-color: black;
+  border-radius: 3.5vw;
+  padding-top: 1vh;
+  padding-bottom: 2vh;
+  height: 20vh;
+}
+.container_id {
+  margin-right: 1vw;
+  width: 30%;
+}
+.photo_id {
+  border-radius: 6vw;
+  box-shadow: 0 0 10px #444;
+  overflow: hidden;
+  align-self: center;
+}
+.photo_id img {
+  height: 5vw;
+  width: auto;
+}
+.name_id {
+  color: #ffc61a;
+}
+.fa, .message_id {
+  color: #fff;
+  align-self: flex-start;
+}
+
+.text_id {
+  width: 70%;
+}
+
+.tesmodial_title {
+  margin-top: 0.5vh;
+}
+.form {
+  color: #fff;
+  font-size: 1.5vw;
+}
+/* Конец стилей testimonials */
+
+/* Начало стилей footer */
+footer {
+  background-color: #0d0c0c;
+  padding: 7vh 0 0vh 0;
+}
+.line {
+  background-color: #ffc61a;
+  height: 0.7vh;
+  width: 100%;
+}
+.logo_dm {
+  font-family: "TT Limes Slab";
+  font-style: italic;
+  font-size: 1.5vw;
+  color: #f0ec29;
+}
+#information,
+#download,
+#Contact {
+  width: 21.3vw;
+  font-size: 1.3vw;
+}
+
+#Contact .line {
+  margin-bottom: 16px;
+}
+#Contact .icons_phon {
+  line-height: 2;
+}
+.icons_cont img {
+  height: 3vh;
+  width: auto;
+  margin-right: 1vw;
+}
+.icons_cont p {
+  margin: 0;
+}
+footer h4 {
+  text-align: center;
+  font-size: 2.2vw;
+}
+.icons_inf img {
+  height: 3vh;
+  width: auto;
+  margin-right: 2vw;
+}
+.description,
+.icons_phon {
+  font-size: 1.3vw;
+  line-height: 2;
+}
+.app {
+  width: 60%;
+}
+.copirait {
+  background-color: #0d0c0c;
+  color: #ffffff;
+  padding: 4vh 0 4vh 0;
+}
+.copirait p {
+  margin: auto;
+}
+.copirait a {
+  color: #f0c33d;
+  font-size: 1.3vw;
+}
+.app img {
+  height: 3.5vh;
+  width: auto;
+}
+.app p {
+  font-size: 1.3vw;
+}
+/* Конец стилей footer */
+
+/* Начало стилей для формы отправки коментария */
+#black_fill {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+#modal_box {
+  position: fixed;
+  top: 20vh;
+  width: 50%;
+  left: calc(50% - 25vw);
+  z-index: 51;
+}
+#close_modal {
+  width: 2vw;
+  height: 2vw;
+  fill: #fff;
+  position: absolute;
+  top: -3vw;
+  right: -4vw;
+  cursor: pointer;
+}
+.login_box {
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.774);
+  border-radius: 4vw;
+}
+.login_box form {
+  padding: 32px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.form a {
+  color: #ffc61a;
+}
+.login_label {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 22px;
+}
+.input {
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.input textarea {
+  height: 15vh;
+  width: 60%;
+  border-radius: 16px;
+  background-color: rgba(195, 195, 195, 1.00);
+  transition: all 35ms linear;
+  border: none;
+  text-align: center;
+}
+.input button {
+  width: 30%;
+}
+.input textarea:focus {
+  transform: scale(1.05);
+  outline: rgba(255, 162, 84, 1.00);
+  background-color: #fff;
+  transition: all 35ms linear;
+}
+.input button:hover {
+  transition: all 35ms linear;
+  transform: scale(1.05);
+}
+.btn1 {
+  border: none;
+  cursor: pointer;
+}
+.send {
+  background-color: rgba(244, 115, 41, 1.00);
+  color: #fff;
+  height: 32px;
+  border-radius: 16px;
+  width: 80%;
+  transition: all 35ms linear;
+}
+/* Конец стилей для формы отправки коментария */
+/* Начало стилей иконок мобильных операторов */
+[class*="mobo-"] {
+  text-indent: 5px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  display: inline;
+  zoom: 1;
+  vertical-align: middle;
+  margin-right: 1px;
+}
+/*Vodafone*/
+.mobo-vodafone-24 {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAFZklEQVRIS4VWbUxTVxh+3vbSllFgWJG14PiIzImwRSPEHzhcsmlMdBoiISH+IjEQTXCZiWZMDcmYMYvG8ccF90NBQlTMzDITg4hEjSHEYjCCjELG10qBQkuh0Nv70bOci+2KwjzJyW1Pz32e9+M5zylhjXH79m19bm5umsFg2A6gyGg05oKx9SpAsiTNLshy3+LU1BPBaHze2tr6T01NjbIaFK22+PTp0ySr1fq9zWYrJqI0SZKMiiRBFx8PdzCIhZcvYWprw18JCVJeaalzemzsD6/X+9OBAwdm3sZ7h6C7u3tXZmbmlbi4uNxgMAhZlgGdDos+Hyba2mBuboa1sxN/79kD8+XLCAUCABH8fr/D7XZX7t+/vyOaZAVBf39/WUZGRh1jbD0H5jMmNhYDt24htqsLWYmJiO3pQe/8PKS7d2FyuyEpCiRJgqqqIKJZt9t98uDBg40AGCeKENjt9sKtW7feDYOrigJ9fDwGbtxA6sQEbDk5QFMTxEeP8KKuDuv27kXA5dKCiJ6MMc/s7GxJWVnZowhBfX19YllZWacgCFv4ZkVRQIKAgaYmfDw0hI9yc0FnzwLT0/BZLOh/+BAJvCwLC1BCIciSpGXB3+VPRVGGPR5PQUVFxQxxteTl5f28adOm75aWlhAKhRBSFMx7PAhVVyPrxAmgpATw+QBJwlJsLJ5XVYHt3Qv9hg1gMzOQgsEVBJxIFMWr4+Pjx8lut3+ck5PToapqFo+cl0YXF4eh2lp8tn07jKdOAVNTQDAIKMtKlHn0SUkYKiyEs7oaRp8PUiCgkfDJxaGq6piiKF/S4ODgNxs3bmxZWloyaNEzhjlBAIqLkZ2VBTQ2airSCFYZjs2b0VdfD8XlgqSqkUwAKIyxI+RwOC7bbLZvRVHUlBDS6zH6+DG2XLyIBB65ywWIIsA0UbwzFJ0OvaWl6Dt2DNLAAGRVjexhjP1Gw8PDDxITE7/m5eEzZDRi+soVfP7gAXSvXgF+f6Q0qxEEiDBvNOLxnTvwTE5Ct5LgGTmdzm5uB2ECxWSC99IlbLt5czn6NUoTJgsSYQLA0PnzGLRaESNJYP9l20+jo6MvDAbDNo2Al8hohLexEdvOnYOONzUqotUyCOp0GATgPXMGr7Ky3iVwOBxtZrP5q/BpZDExGOvrQ/6+fTCv5YRR64t6PQYZg6u2FiM2G/RRGTPGnlFPT09dcnJyVaTJoRBm161D0q5d2DIw8F6KQYMBktmMl9evwzc5CX2UGLQm2+32Q1ar9Zbf79dkyk8lM5kw0dmJwooKmP+nBxMGAwZ0Onxw9CjsRUWIcbuXJb08lmXa3t6enp2d3REIBDK1g8KtQhQhJiVBvnABO5ubESfLmnNxAYaIoBJhShAwToTkHTvw7PRpyCMj0BmN0RmPq6q6W7OKtLS0SykpKSfm5uY0qWp+JMvwx8dj6d497KyrQ5rXiwCABSIsEmlZuouL0Xv4MBReGr72Bp74Z8auulyu45qbXrt27cP8/PyuQCDwSbRpyaIIOS4Okz4fLB0dSHn9GrGyjPmMDIwXFGA+NRUxTif0MTERcM1BiUZEUSyoqqpyR+y6tbX1C4vF8rvf77eEXVF7ciNTVSwypp1SrnH+kp57liRF13z5NyIvY6yksrKyfcV9wL/cv3//iMlk+kUURQtXVZiImxcvXcQuaNWblkN4BEE4WV5e3kBEKy+ccHdaWlp2GwyGX2VZ/pQDcyIN/D2DiIZCoVBlOPLw9lVDaWhosBDRD6qqHpIkKRWAYQ18GYCTiP4UBOHH8vJy99v71sy1pqZGSE9PT+PNIqIiIsoFYHnTRA9jrJeInhBRl9PpHF/rb8u/lWolcpvgzZIAAAAASUVORK5CYII=);
+}
+
+/*Київстар*/
+.mobo-kyivstar-24 {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAADPUlEQVRIS+2VXYhUZRjHf8/7njPnzOzMzjpLZYGNH/RNeCEsJYHWhRGB9EEKC5KRrWWL1NwYlLVQQl1kaStjtmlrRmHBXmhfF6Lsgl10UYSSN0lBthTt5s7OzJk5c855Y0apxtmdxqi7Hnivzv95fu/H83+OcDmR9xZTcxcQ/HiG3CKvk1TpRNTQjHhZpmJjxGQZOtzNVnt7J7mdA0ZNHyWO45Ag5EsGpO/fBbxjVuBxHJsUoRlns1r1P6D5Bv7zKxoxffj/5JFfnk7jdr+KUkuh+j6ue5IS53hazjcdoe6BgjOGw1KscJhB+9mm70PG4gquRoLFBOoBjPShopeE1yt3Y8c+xhVNBHjmV8Scw4k+o1h5l1zq9MVCQt5kCWsZfPtbcnLBaDtNHMe/F6378dRyXBZiS6JRy0STwr7K9Zy3x+hRN6DQKKDujnJdYEAFO/nF3saQBC1tOWp6KUYThOomHGissJ7X2GgJCfbXSwmveVmUWo7W92Or+/BJ48oF0LT5Bmv2TnLp6RbAvvKDFNyPyAhULm5Im9PUokM45hhF+1Srk3dPdWOl+tHWPZRYxIIgzyOxt+Y01eohi3XPjRKpG7GjL/Bqh3kqPv5X7fyjov5o7m9dPJOZaevYui5OnG0yO5eu81nUyVyYQ/P3gB0/X0U6vYJB95Om/GHTi19dSc490o7dHrB39maq8Ql8laEn3MEmazsihlfOpOi67hSeXEsyeg9v8rH5/g/zA0YLvRQSR3D17Y2e1uE4n+u7+FBC3vCWIM5ZkgIlU0Vqm9jiHLq8N9hTfQErNkQMmI0KuN4qBpJf/1Ek7+9C2U8SQ1MxVeL+LWx0v7sUMvcJ9pfXU3QPkpYYJQJU+CiPWwebkkdmMpQSJ+iybm34ZSY8SW95LQ93T7Vv02EvS+AcIy3L8IFKcBTXWs9mqXu7OQ6Ub6PofkpSevANROHzPGG/2B6wyx8gYe9FI3jhWbr1HWyQyXk7Je9vwFgHSIimHPlEpWsY/PMUrVe0p7aSqv4AjGD5/WyNT7S1wJs/JfCuHMFXa0hGX7FFrwGpT6NGtAIeOqxZvXYJoWNYyPesk/r4ah9vmxRFslT44VJH/w415jUyqd8DWQAAAABJRU5ErkJggg==);
+}
+
+/*Lifecell*/
+.mobo-lifecell-24 {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEgElEQVRIS4WWa4hVVRTHf2vvc5/zKDHsSwQ1TQRqOo4zDYaUlGBFQRYlFeaHpEiEysCaoLFApAcZKUVQCb0IoiBSkgZmBHHGx/VJChlWRpmYisl4n+fsFfvcuXfuODO276e7H///Wv/1OsIV1oUjTMuWuaHi6LGGNlVmoBgxnHXK71h2R5YTLXM4MxWMTHVQ2M8TOFYbaMeQARyC1u8rFkdFhd9QtqS7eHcyrAkEhRzXq/K2haUYijEwWFVETEwSotTeecJAQ9IYhkR5NtXFT41E4wj+PUh7OmKrwnViCD0wjsjBt6KMiOFxhCxCsYGkhueJzlUMT7bMZ7C2WScY2c21iQQDQFtsuZdAqbiQhzO3xfsUc7SJ5Ud8LKqeNS7vTVIj/qlE3NPSwzF/WCco7OdjA8swVGKlHSnn2JjpprcRJT/MUpviS6A0QXMfIyWhyoF0JwvrBMV9LAa2i2VkVBajEcfLSVa1drBrHMFeFtiAfoglnHyFNKnluXQnm0WHyJRSbBVY4HVV4bwLWRVadrbO5+zlCPkc71nhKYRK7UwjsrEUlggoAAkijpcci6WU4xZVBkVoVmXgovL0jG5Oe+Jikl6Um2zAGyWlbByPBkIvQj4Gr2ZTWS1foPwK3CeOhQglH0OBxXJxmAeSlm8QPkoleVHmcCkO6D42IqwUA+IoOIcTSzMQjdaDUSVZjljU0sUeEaLTh2m6qkyvsaxBkLDC83JpmD5ruTXdzUOxUYMExRZeMo4+gpismggSw/qf/29QAifsyHSypFFGrwjKIJYW5/haCkfYII4t6bkc9xfzQ3TbJP2Yy9Svwqc0IiGGIw42aUB/dg5/Nt4sHuJmLbPDBLSi7JRfdtPa3sNFfyn3IYlZnQyI0IHEAastb7G3/GRFebPpDF/JvZQ0xzXFCs3pHk6KoP79LXNZnQhY79+rY9e4Si4c5DEJ+VRsNQ61QKrSLMpr5SQf1Bpb4QB3EbEBxzSSfG4ijjnDUqPcP2qcdY7v6gSaI1GxbFPlDh/jUXhfDxci4Zmm+Wzze6dyZKc5XjCG1xEKGCINyfriFF/7EteSFzgVhbxSJyju40YfHAm4ug7uOCdJliRn87OXIM6uHO8Dy8WLNrFdjPmtJJ2wpE5QPkyPhvQjccc0GjJySbl7ejdH4+zKkcgLfTZirQSjdTBVJQuiFf4KYVFjL1pphM0oJVWaIsOD2Q6+r1l+fg8Ls5YffL6PdbApW0XWBbyV7miQqLCXl43lVW9sBJuynayt+ztIutTMsFja40K78vKz49SJE8ya+Qjlugdxy4jY7ks/SnBn0zxO1XDyOVZb5R3s/0gDRivkfTZlu6pNclya5g+wTIS2TAfr69YfpblYZNAIM2GswY1zolqEfuDkNWBNZh6f1c4njExdh5F1Y8OkdIiZGjIohuTlBtVbSERKDWfUsTzTMM0meDCZtCN7WZGwfBJ30MZJXK3spIv4WwzbKiX6Wm6f+HUx5VdFjWxkiNlBghUYuhCm+yISuKARh5wwYJT9qRH+kEWTD6D/AMo22e0evj6AAAAAAElFTkSuQmCC);
+}
+.mobo-vodafone-24, .mobo-kyivstar-24, .mobo-lifecell-24 {
+  background-size: contain;
+  background-repeat: no-repeat;
+  line-height: 3vh;
+  padding-left: 2vw;
+  margin-bottom: 2.5vh;
+/* Конец стилей иконок мобильных операторов */

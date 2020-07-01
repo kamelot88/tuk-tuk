@@ -1,0 +1,93 @@
+body {
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+#list404 {
+  width: 100%;
+  height:96vh;
+  background: url(../img/Layer_3_copy.svg), url(../img/fon_header_black.svg);
+  background-size: cover;
+  padding-top: 4vh;
+}
+.content_variant a {
+  text-decoration: none;
+  color: #fff;
+}
+.logo_404 h2 {
+  font-size: 4.5vw;
+  margin: 0;
+}
+.content_variant p {
+  font-size: 1.9vw;
+}
+h1 {
+  font-size: 8vw;
+  margin: 0;
+}
+.title_404 p {
+  color: #fff;
+  font-size: 1.6vw;
+}
+.title_404 {
+margin-bottom: 10vh;
+}
+.text_title {
+  font-size: 3.5vw;
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+}
+.content_variant h2 {
+  margin-top: 0;
+}
+
+#text3d {
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffc61a;;
+  text-shadow: #e7e7e7 3px 5px 0,
+               #999 4px 6px 3px,
+               #ccc 8px 11px 10px;
+}
+
+#letterpress {
+  background: #999;
+  color: transparent;
+  text-shadow: 0px 1px 3px rgba(250,250,250,0.95);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px), @media only screen and (max-width: 320px),
+@media only screen and (min-device-width: 760px) and (max-device-width: 1024px) {
+  .title_404 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 6vh;
+  }
+  .title_404 h1 {
+    font-size: 15vw;
+    margin-top: 12vh;
+  }
+  .title_404 p {
+    font-size: 5vw;
+  }
+  .content_variant h2 {
+    font-size: 5.5vw;
+  }
+  .content_variant p {
+    font-size: 3.5vw;
+  }
+.content_variant {
+  flex-direction: column;
+}
+.content_variant a:nth-child(1) {
+  margin-bottom: 3vh;
+}
+#text3d {
+  text-shadow: #e7e7e7 2px 3.5px 0,
+               #999 3px 5px 2px,
+               #ccc 2px 3px 3px;
+}
+}
